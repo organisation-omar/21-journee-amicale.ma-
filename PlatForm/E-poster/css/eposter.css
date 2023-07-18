@@ -1,0 +1,174 @@
+.info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 40px;
+   
+   
+    
+}
+
+.info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.info::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+.info::-webkit-scrollbar-thumb {
+  background: #8bc2f8;
+
+}
+
+
+
+
+.iposter{
+  width: 45%;
+  height: auto;
+  box-shadow: rgba(141, 141, 141, 0.342) 1px 1px 2px 4px;
+  border-radius: 4px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  position: relative;
+  background: -webkit-linear-gradient(left,rgb(34 33 29 / 89%),rgb(0 0 0));
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  transition: all 0.3s ease-out;
+  animation: starwars 2s ease-in-out;
+  float: left;
+
+}
+
+
+                @-webkit-keyframes starwars {
+                    0% {
+                    opacity: 0;
+                    -webkit-transform: perspective(200px) scale(3) translateY(180px) rotateX(80deg);
+                    }
+                    80% {
+                    opacity: 1;
+                    -webkit-transform: perspective(200px) scale(1) rotateX(60deg)
+                    }
+                    100% {
+                    opacity: 1;
+                    -webkit-transform: perspective(200px) scale(1) rotateX(0deg)
+                    }
+                    }
+
+
+@keyframes pageBottom {
+    0% {
+    opacity: 0;
+    transform: perspective(400px) rotateX(-90deg);
+    }
+    100% {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+    }
+    }
+    
+.iposter::after{
+    content: '';
+    position: absolute;
+    transform: rotateZ(2deg);
+    border: 1.5px  solid rgba(12, 13, 14, 0.747) ;
+    box-shadow:0px 1px 2px 0px rgb(34, 36, 38,0.15) ;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;   
+    overflow:hidden;
+
+}
+
+
+
+.lien{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vmin;
+    text-decoration: none;  
+    filter: brightness(100%);
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    transition: .5s;
+    font-family: revert;
+         
+}
+  .lien:hover{
+    color: rgb(189, 189, 189);
+  }
+
+  #myBtnreteur {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    z-index: 99;
+    background: -webkit-linear-gradient(left, rgb(34 33 29), #f5f3ef);
+    border-radius: 50px;
+}
+
+
+  .fas{
+    animation: animate1 3s linear infinite;
+  
+  }
+  @keyframes animate1{
+    0%{
+        transform: rotatex(0deg);
+  
+    }
+  
+    80%,100%{
+        transform: rotatex(360deg);
+    }
+  }
+
+
+
+
+
+  #myBtn:hover,#myBtnreteur:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  #myBtn {
+    outline: none;
+    border: 0;
+    display: none; /* Hidden by default */
+    position: fixed;
+    right: 80px;
+    bottom: 20px;
+    height: 55px;
+    width: 55px;
+    background: -webkit-linear-gradient(left, rgb(34 33 29), #f5f3ef);
+    text-align: center;
+    line-height:55px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    z-index: 99;
+
+  }
+
+
+/*////button///**/

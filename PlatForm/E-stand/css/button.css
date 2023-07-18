@@ -1,0 +1,138 @@
+
+#documment-show , #produits-show , #video-show{
+  animation: animate 3s linear infinite;
+}
+
+
+
+.fas{
+  animation: animate1 3s linear infinite;
+
+}
+
+@keyframes animate{
+  0%{
+      transform: rotatey(0deg);
+
+  }
+
+  80%,100%{
+      transform: rotatey(360deg);
+  }
+}
+
+
+@keyframes animate1{
+  0%{
+      transform: rotatex(0deg);
+
+  }
+
+  80%,100%{
+      transform: rotatex(360deg);
+  }
+}
+
+.center{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.outer{
+  position: relative;
+  /* margin: 0 50px; */
+  background:-webkit-linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+  animation: rotate 1.5s linear infinite;
+
+}
+
+@keyframes rotate{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+ .circle{
+  height: 7vmin;
+  width: 7vmin;
+  border-radius: 50%;
+}
+
+.circle a{
+  height: 6vmin;
+  width: 6vmin;
+  border-radius: 50%;
+  line-height: 6vmin;
+}
+
+.outer a,.outer span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.outer a{
+  background: #111;
+  outline: none;
+  border:none;
+  font-size: 1.5vmin;
+  cursor: pointer;  
+  z-index: 9;
+  text-decoration: none;
+}
+
+
+
+.circle a i{
+  color: white;
+}
+
+.outer span{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+
+.circle span{
+  border-radius: 50%;
+}
+
+.outer span:nth-child(1){
+  filter: blur(7px);
+}
+
+.outer span:nth-child(2){
+  filter: blur(14px);
+}
+
+
+
+#myBtnreteur {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 7vmin;
+  width: 7vmin;
+  text-align: center;
+  line-height: 7vmin;
+  font-size: 3vmin;
+  color: white;
+  cursor: pointer;
+  z-index: 99;
+  background: #3f2732;
+  animation: rotate 1.5s linear infinite;
+  border-radius: 50px;
+}
+
+
+body{
+  background-color: color;
+}
